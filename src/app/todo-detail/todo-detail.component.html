@@ -1,0 +1,26 @@
+<!-- *ngIf 'directive' if todo variable is truthy it will put its block of code in the DOM -->
+<div class="container" *ngIf="todo">
+  <div class="todo-title-div">
+    <h2>{{ todo.title | titlecase }} - Details</h2>
+    <span>id: {{ todo.id }}</span>
+  </div>
+  <div>
+    <div class="form-group">
+      <!-- [(ngModel)] is angulars two-way binding syntax needs FormsModule to work -->
+      <!-- allows two way data transfer -->
+      <input type="text" [(ngModel)]="todo.title" class="form-control" />
+      <small class="form-text text-muted">Edit the todo Title</small>
+    </div>
+    <div class="form-group">
+      <textarea
+        class="form-control"
+        [(ngModel)]="todo.body"
+        rows="3"
+      ></textarea>
+      <small class="form-text text-muted">Edit the todo description</small>
+    </div>
+    <button class="btn btn-success" (click)="save()">Save</button>
+    <!-- add a click event for the goBack function -->
+    <button class="btn btn-danger" (click)="goBack()">Go Back</button>
+  </div>
+</div>

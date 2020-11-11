@@ -1,0 +1,26 @@
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.nav {
+  margin-bottom: 2rem;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+}

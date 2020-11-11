@@ -1,0 +1,26 @@
+.container {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.todo-title-div {
+  margin-bottom: 2rem;
+}
+
+.todo-title-div h2 {
+  margin-bottom: 2rem;
+}
+
+button {
+  margin: 0.5rem 1rem;
+}
+
+span {
+  border: 1px solid black;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}

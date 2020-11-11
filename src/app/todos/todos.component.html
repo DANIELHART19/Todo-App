@@ -1,0 +1,47 @@
+<div class="container">
+  <form>
+    <h6>Enter New Todo</h6>
+    <div class="form-group">
+      <input
+        type="text"
+        #todoTitle
+        class="form-control"
+        placeholder="New Todo Title"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <textarea
+        class="form-control"
+        #todoBody
+        rows="3"
+        placeholder="Todo Description"
+        required
+      ></textarea>
+    </div>
+    <button
+      (click)="add(todoTitle.value, todoBody.value)"
+      class="btn btn-primary"
+    >
+      Add Todo
+    </button>
+  </form>
+
+  <ul class="todos list-group list-group-flush">
+    <!-- *ngFor angulars repeater 'directive' needs a host element<li> a list [todos] todo holds current iteration-->
+    <li
+      class="list-group-item list-group-item-action"
+      *ngFor="let todo of todos"
+    >
+      <div>
+        <!-- routes to selected todos editing/details component -->
+        <a routerLink="/detail/{{ todo.id }}">
+          <span class="badge">{{ todo.title | titlecase }}</span>
+        </a>
+        <p class="todo-body-text">{{ todo.body }}</p>
+      </div>
+
+      <button class="btn btn-danger" (click)="delete(todo)">Done</button>
+    </li>
+  </ul>
+</div>

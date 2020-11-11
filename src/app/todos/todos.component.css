@@ -1,0 +1,43 @@
+/* HeroesComponent's private CSS styles */
+
+h6 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.alert {
+  width: 70%;
+  margin: 0 auto;
+}
+form {
+  width: 70%;
+  border-radius: 10px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+
+.todo-body-text {
+  padding: 0 1rem;
+}
+
+ul {
+  margin: 0 auto;
+  width: 70%;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+a {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.btn {
+  height: 2rem;
+  align-self: center;
+}
